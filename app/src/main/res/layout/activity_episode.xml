@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".episodeactivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:textAlignment="center"
+        android:minHeight="?attr/actionBarSize"
+
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ricky and Morty Show"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:textColor="@color/blue"
+
+
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  >
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Name :"
+                      android:textColor="@color/blue"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:layout_weight="0.3"
+                      />
+
+                  <TextView
+                      android:id="@+id/episodeName1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.7"
+                      android:text=" "
+                      android:textColor="@color/blue"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+
+
+                      />
+
+
+              </LinearLayout>
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:paddingTop="8dp"
+                  android:paddingBottom="8dp"
+
+                  >
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Airdate"
+                      android:textColor="@color/blue"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:layout_weight="0.3"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=" "
+                      android:layout_weight="0.7"
+                      android:textColor="@color/blue"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:id="@+id/releaseDate1"
+
+
+                      />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+
+
+                  >
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Episode"
+                      android:textColor="@color/blue"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:layout_weight="0.3"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=" "
+                      android:layout_weight="0.7"
+                      android:textColor="@color/blue"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:id="@+id/episodeNumber1"
+
+
+                      />
+
+
+
+
+              </LinearLayout>
+
+              <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+
+                  >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=" Character list"
+                      android:textColor="@color/blue"
+                      android:textSize="15sp"
+                      android:layout_marginBottom="16dp"
+
+
+                      />
+
+                  <android.support.v7.widget.RecyclerView
+
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/character_list"
+
+                      ></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+              </LinearLayout>
+
+
+
+
+
+
+
+
+
+          </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
